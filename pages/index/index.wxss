@@ -1,0 +1,66 @@
+/**index.wxss**/
+
+/* 电影大框架 */
+.group-module{
+  padding: 40rpx;
+  background-color: #fff;
+}
+/* 电影大框架中的顶部文字区域 */
+.group-module .module-top{
+  font-size: 36rpx;
+  display: flex;
+  justify-content: space-between;
+}
+/* 顶部文字区域中的电影 */
+.module-top .module-title{
+  color: #494949;
+}
+/* 顶部文字区域中的更多 */
+.module-top .module-more{
+  color: #41be57;
+}
+/* 电影滑动组件 */
+.module-scroll-view{
+  margin-top: 40rpx;
+  width: 100%;
+  height: 400rpx;
+  white-space: nowrap;
+}
+
+.module-scroll-view .item-navigator{
+  width: 200rpx;
+  margin-right: 20rpx; 
+  display: inline-block;
+}
+
+/* 让滚动到最后时文字“更多”与图片对齐 */
+.module-scroll-view .item-navigator:last-of-type{
+  margin-right: 0;
+}
+
+.item-navigator .group-item{
+  width: 100%;
+
+}
+
+.group-item .group-thumbnail{
+  width: 100%;
+  height: 284rpx;
+  text-overflow: ellipsis;
+}
+
+.group-thumbnail .thumbnail{
+  width: 100%;
+  height: 100%;
+}
+
+.group-thumbnail .item-title{
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 10rpx;
+  /* 对于超出的文本用省略号表示 */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /**/
+}
+
