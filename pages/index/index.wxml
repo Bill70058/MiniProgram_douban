@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<searchBar isnavigator="{{true}}"></searchBar>
+
+<!-- 电影 -->
+<indexModule title="电影" items="{{movie}}"></indexModule>
+
+<!-- 电视剧组件 -->
+<indexModule title="电视剧" items="{{tvs}}"></indexModule>
+
+<!-- 综艺组件 -->
+<indexModule title="综艺" items="{{shows}}"></indexModule>
