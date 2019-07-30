@@ -1,7 +1,6 @@
 {
-  "component": true,
   "usingComponents": {
-    "starts":"/components/starts/starts",
+    "searchBar": "/components/searchBar/searchBar",
     "itemView":"/components/itemView/itemView"
   }
 }

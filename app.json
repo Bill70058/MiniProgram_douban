@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/search/search",
+    "pages/list/list",
     "components/searchBar/searchBar"
   ],
   "window": {

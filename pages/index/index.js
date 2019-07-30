@@ -1,4 +1,4 @@
-import {network} from "network";
+import {network} from "../../utils/network.js";
 /**
  * module层，负责数据操作
  */

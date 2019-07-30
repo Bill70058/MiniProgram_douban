@@ -1,0 +1,11 @@
+<navigator class="item-navigator">
+<!-- 全部图片块 -->
+  <view class="group-item">
+  <!-- 单个图片块 -->
+    <view class="group-thumbnail">
+      <image class="thumbnail" src="{{item.cover.url}}"></image>
+      <view class="item-title">{{item.title}}</view>
+      <starts rate="{{item.rating.value}}"></starts>
+    </view>
+  </view>
+</navigator>

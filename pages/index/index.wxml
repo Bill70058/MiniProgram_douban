@@ -2,10 +2,10 @@
 <searchBar isnavigator="{{true}}"></searchBar>
 
 <!-- 电影 -->
-<indexModule title="电影" items="{{movie}}"></indexModule>
+<indexModule title="电影" items="{{movie}}" moreurl="/pages/list/list?type=movie"></indexModule>
 
 <!-- 电视剧组件 -->
-<indexModule title="电视剧" items="{{tvs}}"></indexModule>
+<indexModule title="电视剧" items="{{tvs}}" moreurl="/pages/list/list?type=tv"></indexModule>
 
 <!-- 综艺组件 -->
-<indexModule title="综艺" items="{{shows}}"></indexModule>
+<indexModule title="综艺" items="{{shows}}" moreurl="/pages/list/list?type=show"></indexModule>
