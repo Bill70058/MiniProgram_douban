@@ -1,4 +1,4 @@
-// components/itemView/itemView.js
+// components/comment/comment.js
 Component({
   /**
    * 组件的属性列表
@@ -7,10 +7,6 @@ Component({
     item:{
       type:Object,
       value:{}
-    },
-    itemurl:{
-      type:String,
-      value:""
     }
   },
 

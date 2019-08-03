@@ -2,5 +2,5 @@
 <searchBar isnavigator="{{true}}"></searchBar>
 
 <view class="container">
-<itemView wx:for="{{items}}" wx:key="{{item.title}}" item="{{item}}"></itemView>
+<itemView wx:for="{{items}}" wx:key="{{item.title}}" item="{{item}}" itemurl="../../pages/detail/detail?type={{type}}&id={{item.id}}"></itemView>
 </view>

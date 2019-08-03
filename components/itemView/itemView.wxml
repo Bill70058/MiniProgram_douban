@@ -1,4 +1,4 @@
-<navigator class="item-navigator">
+<navigator class="item-navigator" url="{{itemurl }}">
 <!-- 全部图片块 -->
   <view class="group-item">
   <!-- 单个图片块 -->

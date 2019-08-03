@@ -17,6 +17,9 @@ Page({
     var type = options.type;
     var that = this;
     var title = "";
+    this.setData({
+      type:type
+    })
     //加载提示
     wx.showLoading({
       title: '正在加载中...',
