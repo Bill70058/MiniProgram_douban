@@ -128,6 +128,20 @@ const network = {
         }
       }
     })
+  },
+  //搜索item
+  getSearch:function(parse){
+    var q = parse.q;
+    var url = globalUrls.searchUrl(q);
+    wx.request({
+      url: url,
+      success:function(data){
+        var data = data.data.subjects;
+        if(parse.success){
+          parse.success(data);
+        }
+      }
+    })
   }
 }
 

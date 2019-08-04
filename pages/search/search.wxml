@@ -1,2 +1,12 @@
 <!--pages/search/search.wxml-->
-<searchBar></searchBar>
+<searchBar bindsearchinput="onSearchInputEvent"></searchBar>
+
+<view class="item-list-group">
+  <view class="item-group" wx:for="{{subject}}" wx:key="{{item}}" bind:tap="onItemTapEvent" data-id="{{item.id}}">
+    <image src="{{item.pic.normal}}" class="thumbnail"></image>
+  <view class="info-group">
+    <view class="title">{{item.title}}</view>
+    <view class="rate-year">{{item.rating.value}}分/{{item.year}}</view>
+  </view>
+  </view>
+</view>

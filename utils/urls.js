@@ -26,6 +26,9 @@ const globalUrls = {
   },
   showComment:function(id, count=3,start=0){
     return this.tvComment(id,count,start);
+  },
+  searchUrl: function (q) {
+    return 'https://m.douban.com/rexxar/api/v2/search?type=movie&q=' + q;
   }
 }
 

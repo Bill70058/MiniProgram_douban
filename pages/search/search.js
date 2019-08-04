@@ -1,4 +1,5 @@
 // pages/search/search.js
+import {network} from "../../utils/network.js"
 Page({
 
   /**
@@ -13,6 +14,31 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+/**
+ * 通过在模块用triggerEvent事件传递值，再在调用模块的地方用这个方法接收到
+ */
+  onSearchInputEvent:function(event){
+    var that = this;
+    console.log(event);
+    var value = event.detail.value;
+    network.getSearch({
+      q:value,
+      success:function(data){
+      //  console.log(data);
+      that.setData({
+        subject:data
+      })
+      }
+    })
+  },
+  
+  onItemTapEvent:function(event){
+    // console.log(event);
+    var id = event.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '../detail/detail?type=movie&id='+id,
+    })
   },
 
   /**
