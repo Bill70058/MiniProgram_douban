@@ -1,4 +1,6 @@
-// pages/comments/comments.js
+/**
+ * 评论区更多评论页面
+ */
 import {network} from "../../utils/network.js"
 Page({
 

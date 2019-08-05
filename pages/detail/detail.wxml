@@ -4,7 +4,7 @@
   <view class="item-detail">
     <view class="left-detail">
       <view class="item-rate">
-        <starts rate="8" starSize="30" fontSize="30" fontColor="#5959"></starts>
+        <starts rate="{{item.rating.value}}" starSize="30" fontSize="30" fontColor="#5959"></starts>
         <text class="comment-persons">{{item.rating.count}}人评价</text>
       </view>
       <view class="item-sub-detail">

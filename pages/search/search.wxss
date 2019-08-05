@@ -25,3 +25,21 @@
   font-size: 32rpx;
   color: #7b7b7b;
 }
+
+/*历史记录样式代码*/
+.history-list-group{
+  padding: 10rpx 20rpx;
+}
+.history-list-group .history-title{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0rpx;
+  background: #f9f9f9;
+  font-size: 28rpx;
+  color: #919191;
+}
+.history-list-group .history-group{
+  font-size: 32rpx;
+  padding: 20rpx 0rpx;
+  border-bottom: 1px solid #E4E4E4;
+}

@@ -1,8 +1,21 @@
 <!--pages/search/search.wxml-->
 <searchBar bindsearchinput="onSearchInputEvent"></searchBar>
 
+<!-- 历史搜索 -->
+<view class="history-list-group">
+  <view class="history-title">
+    <view class="title">历史记录</view>
+    <view class="clear" bind:tap="onClearEvent">清除</view>
+  </view>
+  
+  <navigator class="history-group" wx:for="{{history}}" wx:key="{{item.id}}" url="{{url+item.id}}">
+    {{item.title}}
+  </navigator>
+</view>
+
+<!-- 搜索详情 -->
 <view class="item-list-group">
-  <view class="item-group" wx:for="{{subject}}" wx:key="{{item}}" bind:tap="onItemTapEvent" data-id="{{item.id}}">
+  <view class="item-group" wx:for="{{subject}}" wx:key="{{item}}" bind:tap="onItemTapEvent" data-id="{{item.id}}" data-title="{{item.title}}">
     <image src="{{item.pic.normal}}" class="thumbnail"></image>
   <view class="info-group">
     <view class="title">{{item.title}}</view>

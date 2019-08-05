@@ -1,3 +1,8 @@
+/**
+ * 搜索栏组件：用于indexModule文件、search文件
+ * 使用：<searchBar isnavigator="{{true}}"></searchBar>
+ * isnavigator：可选，是否有搜索功能，默认不显示
+ */
 Component({
   properties:{
     isnavigator:{

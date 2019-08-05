@@ -1,4 +1,6 @@
-// pages/detail/detail.js
+/**
+ * 电影详情页面
+ */
 import {network} from "../../utils/network.js"
 Page({
 

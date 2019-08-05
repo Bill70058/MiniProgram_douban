@@ -1,5 +1,8 @@
 /**
- * controller层，负责网络请求数据
+ * controller层，负责网络请求数据，存放了所有数据请求方法，使用时导入该文件即可使用文件内的网络请求方法
+ * 使用：
+ * import {network} from "...network文件相对地址..."
+ * network.getMovieList();
  */
 import { globalUrls } from "urls.js";
 const network = {

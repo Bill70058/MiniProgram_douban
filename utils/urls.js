@@ -1,5 +1,8 @@
 /**
- * 存放url链接
+ * 存放所有网络请求需要用到的链接，在network文件调用
+ * 使用：
+ * import {globalUrls} from "...urls.js文件相对地址..";
+ * var url = globalUrls.movieList;
  */
 
 const globalUrls = {
